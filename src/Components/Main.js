@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: `http://206.189.80.196:8080`
+    baseURL: `https://206.189.80.196:8080`
 })
 
 class Main extends React.Component {
