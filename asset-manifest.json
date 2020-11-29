@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/random-questions-frontend/static/css/main.2d0ffdfa.chunk.css",
-    "main.js": "/random-questions-frontend/static/js/main.14493683.chunk.js",
-    "main.js.map": "/random-questions-frontend/static/js/main.14493683.chunk.js.map",
-    "runtime-main.js": "/random-questions-frontend/static/js/runtime-main.6c4b1069.js",
-    "runtime-main.js.map": "/random-questions-frontend/static/js/runtime-main.6c4b1069.js.map",
-    "static/js/2.225ee357.chunk.js": "/random-questions-frontend/static/js/2.225ee357.chunk.js",
-    "static/js/2.225ee357.chunk.js.map": "/random-questions-frontend/static/js/2.225ee357.chunk.js.map",
-    "static/js/3.720ea840.chunk.js": "/random-questions-frontend/static/js/3.720ea840.chunk.js",
-    "static/js/3.720ea840.chunk.js.map": "/random-questions-frontend/static/js/3.720ea840.chunk.js.map",
+    "main.js": "/random-questions-frontend/static/js/main.d775c345.chunk.js",
+    "main.js.map": "/random-questions-frontend/static/js/main.d775c345.chunk.js.map",
+    "runtime-main.js": "/random-questions-frontend/static/js/runtime-main.f8e655ee.js",
+    "runtime-main.js.map": "/random-questions-frontend/static/js/runtime-main.f8e655ee.js.map",
+    "static/js/2.a9443587.chunk.js": "/random-questions-frontend/static/js/2.a9443587.chunk.js",
+    "static/js/2.a9443587.chunk.js.map": "/random-questions-frontend/static/js/2.a9443587.chunk.js.map",
+    "static/js/3.450a0ed7.chunk.js": "/random-questions-frontend/static/js/3.450a0ed7.chunk.js",
+    "static/js/3.450a0ed7.chunk.js.map": "/random-questions-frontend/static/js/3.450a0ed7.chunk.js.map",
     "index.html": "/random-questions-frontend/index.html",
     "static/css/main.2d0ffdfa.chunk.css.map": "/random-questions-frontend/static/css/main.2d0ffdfa.chunk.css.map",
-    "static/js/2.225ee357.chunk.js.LICENSE.txt": "/random-questions-frontend/static/js/2.225ee357.chunk.js.LICENSE.txt"
+    "static/js/2.a9443587.chunk.js.LICENSE.txt": "/random-questions-frontend/static/js/2.a9443587.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6c4b1069.js",
-    "static/js/2.225ee357.chunk.js",
+    "static/js/runtime-main.f8e655ee.js",
+    "static/js/2.a9443587.chunk.js",
     "static/css/main.2d0ffdfa.chunk.css",
-    "static/js/main.14493683.chunk.js"
+    "static/js/main.d775c345.chunk.js"
   ]
 }
