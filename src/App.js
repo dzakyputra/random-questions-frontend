@@ -1,13 +1,15 @@
 import './App.css';
 import Header from './Components/Header';
-import Main from './Components/Main';
+import Generator from './Components/Generator';
+import Recorder from './Components/Recorder';
 import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="h-screen">
       <Header />
-      <Main />
+      <Generator />
+      <Recorder />
       <Footer />
     </div>
   );

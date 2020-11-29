@@ -2,10 +2,10 @@ import React from 'react';
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: `https://206.189.80.196:8080`
+    baseURL: `http://206.189.80.196:8080`
 })
 
-class Main extends React.Component {
+class Generator extends React.Component {
 
     state = {
         id: 0,
@@ -21,10 +21,10 @@ class Main extends React.Component {
 
     render () {
         
-        return  <div className="h-full bg-blue-500">
+        return  <div className="py-10 bg-blue-500">
 
                     <div className="flex justify-center">
-                        <button onClick={this.getQuestion} style={{cursor:"pointer"}} className="bg-white hover:bg-gray-200 text-blue-500 font-bold py-3 px-8 lg:mt-2 mt-5 lg:text-lg text-sm rounded-xl">
+                        <button onClick={this.getQuestion} style={{cursor:"pointer"}} className="bg-white hover:bg-gray-200 text-blue-500 font-bold py-3 px-8 lg:text-lg text-sm rounded-xl">
                             <div className="md:flex">
                                 Generate Question
                             </div>
@@ -53,4 +53,4 @@ class Main extends React.Component {
 
 }
 
-export default Main;
+export default Generator;

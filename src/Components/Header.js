@@ -3,9 +3,9 @@ import React from 'react';
 function Header() {
     return (
 
-        <header className="bg-blue-500 h-3/4 text-white text-center">
+        <header className="lg:py-20 py-6 items-center bg-blue-500 text-white text-center">
 
-            <h2 className="tracking-tight leading-10 font-extrabold text-white lg:text-5xl text-3xl lg:mt-40 mt-20 mb-5">
+            <h2 className="tracking-tight leading-10 font-extrabold text-white lg:text-5xl text-3xl mb-5 align-middle">
                 Random Questions
             </h2>
 
