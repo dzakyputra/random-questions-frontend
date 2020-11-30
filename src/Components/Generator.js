@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: `https://206.189.80.196:8080`
+    baseURL: `http://206.189.80.196:8080`
 })
 
 class Generator extends React.Component {
