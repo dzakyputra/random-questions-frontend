@@ -8,8 +8,9 @@ const api = axios.create({
 class Generator extends React.Component {
 
     state = {
-        id: 0,
-        question: 'Your question will appear here',
+        started: 0,
+        questions: [],
+        question: 'The question will appear here',
         loading: false
     }
 
@@ -17,11 +18,29 @@ class Generator extends React.Component {
 
         this.setState({ loading: true })
 
-        let res = await api.get('/questions/random')
-        
-        this.setState({ id: res.data.data.ID, 
-                        question: res.data.data.Question,
-                        loading: false })
+        // If the questions is empty, we are going to get those questions from the API
+        if (!this.state.questions || !this.state.questions.length) {
+            let res = await api.get('/questions/random')
+
+            for (var key in res.data.data) {
+                this.setState({
+                    questions: [...this.state.questions, res.data.data[key].Question],
+                    started: 1
+                })
+            }
+        }
+
+        // Take one random question and update the state
+        var array = [...this.state.questions]
+        var random = Math.floor(Math.random()*array.length)
+
+        this.setState({
+            question: array.splice(random, 1),
+            questions: array
+        })
+
+        this.setState({ loading: false })
+
     }
 
     render () {
@@ -44,7 +63,7 @@ class Generator extends React.Component {
                                     Question ID: {this.state.id}
                                 </div> */}
                                 
-                                <div className={"block mt-1 lg:text-3xl leading-tight md:text-xl text-base text-center " + (this.state.id === 0 ? 'text-gray-400' : 'text-black')}> 
+                                <div className={"block mt-1 lg:text-3xl leading-tight md:text-xl text-base text-center " + (this.state.started === 0 ? 'text-gray-400' : 'text-black')}> 
 
                                     { this.state.loading ? 
 
