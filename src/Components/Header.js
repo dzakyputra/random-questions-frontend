@@ -9,7 +9,7 @@ function Header() {
                 Random Questions
             </h2>
 
-            <p className="text-white mx-10 text-base">
+            <p className="text-white mx-10 lg:text-base text-xs">
                 Get a random question, record your answer. <br></br>
                 Built for practicing your speaking skill and for fun. Enjoy!
             </p>
