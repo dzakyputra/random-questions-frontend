@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactMic } from 'react-mic';
+import Counter from './Counter';
  
 class Recorder extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Recorder extends React.Component {
   }
  
   startRecording = () => {
-    this.setState({ record: true });
+    this.setState({ record: true, downloadLink: '' });
   }
  
   stopRecording = () => {
@@ -50,7 +51,13 @@ class Recorder extends React.Component {
 
             </div>
 
-            <div className={"flex justify-center " + (this.state.downloadLink !== '' ? "" : "-mt-12")}>
+            <div className={"flex justify-center mb-5 " + (this.state.record ? "-mt-10" : "-mt-5")}>
+
+              {this.state.record ? <Counter /> : null}  
+
+            </div>
+
+            <div className={"flex justify-center " + (this.state.downloadLink !== '' ? "" : "-mt-0")} play="true">
 
                 <button className="bg-blue-500 mx-2" onClick={this.startRecording} type="button" disabled={this.state.record ? true : false}>
                   <svg className={"h-10 w-10 " + (this.state.record ? "text-gray-400" : "text-white hover:text-blue-200")} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
