@@ -11,7 +11,7 @@ class Counter extends React.Component {
       }
       
       this.interval = setInterval(this.updateDate, 1000);
-      
+
     }
     
     componentWillUnmount() {
