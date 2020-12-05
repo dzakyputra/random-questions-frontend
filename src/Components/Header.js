@@ -9,8 +9,9 @@ function Header() {
                 Random Questions
             </h2>
 
-            <p className="text-white mx-10 lg:text-lg text-base">
-                Random Questions is a website where you can get random questions
+            <p className="text-white mx-10 text-base">
+                Get a random question, record your answer. <br></br>
+                Built for practicing your speaking skill and for fun. Enjoy!
             </p>
 
         </header>
